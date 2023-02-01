@@ -5,7 +5,9 @@ import Card from "../UI/Card/Card";
 const Users = () => {
   const [users, setUsers] = useState([]);
   const getUsers = async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/comments?_limit=8"
+    );
     const data = await response.json();
     setUsers(data);
   };
@@ -18,9 +20,7 @@ const Users = () => {
         {users.map((user) => (
           <List key={user.id}>
             <p>{user.name}</p>
-            <p>{user.username}</p>
-            <p>{user.email}</p>
-            <p>{user.phone}</p>
+            <p>{user.body}</p>
           </List>
         ))}
       </UsersUl>
@@ -34,9 +34,10 @@ const UsersUl = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   list-style: none;
   padding: 30px;
-  /* text-align: center; */
+  text-align: center;
 `;
 const List = styled.li`
   padding: 0px;
