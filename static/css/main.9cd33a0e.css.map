@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.9cd33a0e.css","mappings":"AAAA,EACE,qBACF,CAEA,KAEE,eAAgB,CADhB,sBAEF,CAEA,KACE,QACF,CAEA,KACE,eACF","sources":["index.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-family: sans-serif;\n  background: #fff;\n}\n\nbody {\n  margin: 0;\n}\n\nmain {\n  margin-top: 6rem;\n}"],"names":[],"sourceRoot":""}
